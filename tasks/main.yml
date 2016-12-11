@@ -15,3 +15,9 @@
 # - name: be sure ntpd is running and enabled
 #   service: name=ntpd state=running enabled=yes
 #   tags: ntp
+- name: Install list of common packages
+  become: true
+  apt: name={{item}} state=installed
+  with_items:
+    - zip
+    - tcpflow
