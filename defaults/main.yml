@@ -1,0 +1,4 @@
+# file: roles/ansible-common/defaults/main.yml
+---
+#
+# foo: default

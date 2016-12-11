@@ -1,0 +1,4 @@
+# file: roles/ansible-common/vars/main.yml
+---
+#
+# foo: bar
