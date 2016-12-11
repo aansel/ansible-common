@@ -17,7 +17,7 @@
 #   tags: ntp
 - name: Install list of common packages
   become: true
-  apt: name={{item}} state=removed
+  apt: name={{item}} state=installed
   with_items:
     - zip
     - tcpflow
